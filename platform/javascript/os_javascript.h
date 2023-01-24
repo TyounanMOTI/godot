@@ -32,6 +32,7 @@
 #define OS_JAVASCRIPT_H
 
 #include "audio_driver_javascript.h"
+#include "midi_driver_javascript.h"
 #include "drivers/unix/os_unix.h"
 #include "main/input_default.h"
 #include "servers/audio_server.h"
@@ -73,6 +74,7 @@ private:
 	int video_driver_index;
 	List<AudioDriverJavaScript *> audio_drivers;
 	VisualServer *visual_server;
+	MIDIDriverJavaScript midi_driver;
 
 	bool swap_ok_cancel;
 	bool idb_available;

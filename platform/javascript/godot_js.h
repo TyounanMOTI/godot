@@ -68,6 +68,11 @@ extern int godot_js_input_gamepad_sample_get(int p_idx, float r_btns[16], int32_
 extern void godot_js_input_paste_cb(void (*p_callback)(const char *p_text));
 extern void godot_js_input_drop_files_cb(void (*p_callback)(char **p_filev, int p_filec));
 
+// Input MIDI
+extern int godot_js_input_midi_open();
+extern int godot_js_input_midi_get_num_inputs();
+extern int godot_js_input_midi_get_input_name(int p_idx, char *p_ptr, int p_ptr_max);
+
 // TTS
 extern int godot_js_tts_is_speaking();
 extern int godot_js_tts_is_paused();

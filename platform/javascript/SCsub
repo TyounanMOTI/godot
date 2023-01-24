@@ -22,6 +22,7 @@ javascript_files = [
     "http_client_javascript.cpp",
     "javascript_singleton.cpp",
     "javascript_main.cpp",
+    "midi_driver_javascript.cpp",
     "os_javascript.cpp",
     "api/javascript_tools_editor_plugin.cpp",
 ]
@@ -35,6 +36,7 @@ sys_env.AddJSLibraries(
         "js/libs/library_godot_os.js",
         "js/libs/library_godot_runtime.js",
         "js/libs/library_godot_input.js",
+        "js/libs/library_godot_midi.js",
     ]
 )
 
